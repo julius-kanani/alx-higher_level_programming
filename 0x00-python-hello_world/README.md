@@ -14,4 +14,4 @@ A python script hat prints a string.
 
 ## Task 3
 Print an integer
-* File\_name - `3-print\_number.py`
+* File\_name  `3-print_number.py`
