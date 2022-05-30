@@ -11,3 +11,7 @@ A shell script that runs python code. The pythn code will be saved in the enviro
 ## Task 2
 A python script hat prints a string.
 * File\_name - `2-print.py`
+
+## Task 3
+Print an integer
+* File\_name - '3-print\_number.py`
