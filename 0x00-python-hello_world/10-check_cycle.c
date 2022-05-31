@@ -9,11 +9,10 @@
 
 int check_cycle(listint_t *list)
 {
-	listint_t *head = list, *current_node;
+	listint_t *head = list, *current_node = list;
 
 	while (head != NULL && head->next != NULL)
 	{
-		current_node = head;
 		while (current_node->next != NULL)
 		{
 			/* does the current node point to itself */
