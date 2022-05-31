@@ -22,6 +22,7 @@ int check_cycle(listint_t *list)
 		}
 
 		head = head->next;
+		current_node = head;
 	}
 
 	return (0);
