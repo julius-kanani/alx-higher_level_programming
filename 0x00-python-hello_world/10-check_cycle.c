@@ -11,7 +11,7 @@ int check_cycle(listint_t *list)
 {
 	listint_t *head = list, *current_node = list;
 
-	while (head != NULL)	/* if head exists */
+	while (head != NULL && head->next != NULL)
 	{
 		while (current_node->next != NULL)
 		{
