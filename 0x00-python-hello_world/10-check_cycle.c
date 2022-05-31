@@ -9,22 +9,22 @@
 
 int check_cycle(listint_t *list)
 {
-	listint_t *head = NULL, *current = NULL;
-	int cycle;
-
-	cycle = 0;
-	head = list;
-
-	current = list;
-	while (current->next != NULL)
+	listint_t *head = list, *current_node = NULL;
+	
+	while (head != NULL)	/* if head exists */
 	{
-		if (current->next == head)
+		current_node = head;	/* head is the current node */
+		while (current_node != NULL)
 		{
-			++cycle;
-			return (cycle);
+			/* if current node points to the head */
+			if (current_node->next == head)
+				return (1);
+			/* if it does not move to the next node */
+			current_node = current_node->next;
 		}
-		current = current->next;
-	}
 
-	return (cycle);
+		head = head->next;
+	}
+	
+	return (0);
 }
