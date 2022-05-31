@@ -10,7 +10,7 @@
 int check_cycle(listint_t *list)
 {
 	listint_t *head = list, *current_node = NULL;
-	
+
 	while (head != NULL)	/* if head exists */
 	{
 		current_node = head;	/* head is the current node */
@@ -25,6 +25,6 @@ int check_cycle(listint_t *list)
 
 		head = head->next;
 	}
-	
+
 	return (0);
 }
