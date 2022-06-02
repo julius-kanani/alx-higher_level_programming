@@ -15,7 +15,7 @@ def print_sys_arguments():
     prt = "{:d} {:s}{:s}"
 
     print(prt.format(
-                    size - 1, "argument" if size <= 2 else "arguments",
+                    size - 1, "arguments" if size <= 2 else "arguments",
                     "." if size == 1 else ":"
                     ))
 
