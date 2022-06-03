@@ -12,10 +12,12 @@ def print_sys_arguments():
        The return value. Nothing
     """
     size = len(argv)
-
-    print("{:d} {:s}{:s}".format(
-                        size - 1, "argument" if size <= 2 else "arguments",
-                        "." if size == 1 else ":"))
+    ac = (size - 1)
+    print("{:d} {:s}{:s}{:s}".format(
+                    ac,
+                    "argument" if ac <= 1 else "arguments",
+                    "s" if ac == 0 else "",
+                    "." if ac == 1 else ":"))
     for index, args in enumerate(argv):
         if index == 0:
             continue
