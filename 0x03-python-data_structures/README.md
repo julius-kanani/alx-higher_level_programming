@@ -17,3 +17,7 @@ Function: `def replace_in_list(my_list, idx, element);` - replaces an element of
 ## Task 3
 Function : `def print_reversed_list_integer(my_list=[]):` - prints all integers of a list in reverse order.
 * File-name: `3-print-reversed_list_integer.py`.
+
+## Task 4
+Function: `def new_in_list(my_list, idx, element):` - replaces an element in a list at a specific position without modifying the original list.
+* File-name: `4-new_in_list.py`.
