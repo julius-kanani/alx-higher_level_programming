@@ -9,3 +9,7 @@ list.
 ## Task 1
 Function: `element_at(my_list, idx):` - retrieves an element from a list
 * File-name: `1-element_at.py`.
+
+## Task 2
+Function: `replace_in_list(my_list, idx, element);` - replaces an element of a list at a specific position.
+* File-name: `2-replace_in_list.py`.
