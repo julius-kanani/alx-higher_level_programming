@@ -4,4 +4,8 @@ Python data structures
 ## Task 0
 Function: `def print_list_integer(my_list=[]):` - prints all integers of a
 list.
-File-name: `0-print_list_integer.py`.
+* File-name: `0-print_list_integer.py`.
+
+## Task 1
+Function: `element_at(my_list, idx):` - retrieves an element from a list
+* File-name: `1-element_at.py`.
