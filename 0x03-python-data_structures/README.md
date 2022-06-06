@@ -49,3 +49,7 @@ Function: `def divisible_by_2(my_list=[]):` - finds all ultiples of 2 in a list
 ## Task 11
 Function: `def delete_at(my_list=[], idx=0):` - deletes the item at a specific position in a list.
 * File-name: `11_delete_at.py`.
+
+## Task 12
+Complete given source code in order to switch value of `a` and `b`.
+* File-name: `12-switch.py`.
