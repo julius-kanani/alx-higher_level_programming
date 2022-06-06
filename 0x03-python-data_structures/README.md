@@ -25,3 +25,7 @@ Function: `def new_in_list(my_list, idx, element):` - replaces an element in a l
 ## Task 5
 Function: `def no_c(my_string):` - removes all characters c and C from a string.
 * File-name: `5-no_c.py`.
+
+## Task 6
+Function: `def print_matrix_integer([[]]):` - prints a matrix of integers.
+* File-name: `6-print_matrix_integer`.
