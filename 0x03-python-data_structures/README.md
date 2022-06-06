@@ -21,3 +21,7 @@ Function : `def print_reversed_list_integer(my_list=[]):` - prints all integers 
 ## Task 4
 Function: `def new_in_list(my_list, idx, element):` - replaces an element in a list at a specific position without modifying the original list.
 * File-name: `4-new_in_list.py`.
+
+## Task 5
+Function: `def no_c(my_string):` - removes all characters c and C from a string.
+* File-name: `5-no_c.py`.
