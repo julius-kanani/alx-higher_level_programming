@@ -33,3 +33,7 @@ Function: `def print_matrix_integer([[]]):` - prints a matrix of integers.
 ## Task 7
 Function: `def add_tuple(tuple_a=(), tuple_b=()):` - adds two tuples.
 * File-name: `7-add_tuple.py`.
+
+## Task 8
+Function: `def multiple_returns(sentence);` - returns a tuple with length of a string and its first character.
+* File-name: `8-multiple_returns.py`.
