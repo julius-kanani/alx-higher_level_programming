@@ -45,3 +45,7 @@ Function: `def max_integer(my_list=[]):` - finds the biggest integer of a list
 ## Task 10
 Function: `def divisible_by_2(my_list=[]):` - finds all ultiples of 2 in a list
 * File-name; `10-divisible_by_2.py`.
+
+## Task 11
+Function: `def delete_at(my_list=[], idx=0):` - deletes the item at a specific position in a list.
+* File-name: `11_delete_at.py`.
