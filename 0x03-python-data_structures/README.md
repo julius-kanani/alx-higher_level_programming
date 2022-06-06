@@ -11,7 +11,7 @@ Function: `def element_at(my_list, idx):` - retrieves an element from a list
 * File-name: `1-element_at.py`.
 
 ## Task 2
-Function: `def replace_in_list(my_list, idx, element);` - replaces an element of a list at a specific position.
+Function: `def replace_in_list(my_list, idx, element):` - replaces an element of a list at a specific position.
 * File-name: `2-replace_in_list.py`.
 
 ## Task 3
@@ -35,5 +35,9 @@ Function: `def add_tuple(tuple_a=(), tuple_b=()):` - adds two tuples.
 * File-name: `7-add_tuple.py`.
 
 ## Task 8
-Function: `def multiple_returns(sentence);` - returns a tuple with length of a string and its first character.
+Function: `def multiple_returns(sentence):` - returns a tuple with length of a string and its first character.
 * File-name: `8-multiple_returns.py`.
+
+## Task 9
+Function: `def max_integer(my_list=[]):` - finds the biggest integer of a list
+* File-name: `9-max_integer.py`.
