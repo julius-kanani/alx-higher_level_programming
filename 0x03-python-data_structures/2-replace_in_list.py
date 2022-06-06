@@ -17,10 +17,8 @@ def replace_in_list(my_list, idx, element):
     list_len = len(my_list)
 
     if (idx >= 0) and (idx < list_len):
-        for index in range(list_len):
-            if index == idx:
-                my_list[index] = element
-                return (my_list)
+        my_list[idx] = element
+        return (my_list)
 
     return (my_list)
 
