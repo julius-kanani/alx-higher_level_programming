@@ -41,3 +41,7 @@ Function: `def multiple_returns(sentence):` - returns a tuple with length of a s
 ## Task 9
 Function: `def max_integer(my_list=[]):` - finds the biggest integer of a list
 * File-name: `9-max_integer.py`.
+
+## Task 10
+Function: `def divisible_by_2(my_list=[]):` - finds all ultiples of 2 in a list
+* File-name; `10-divisible_by_2.py`.
