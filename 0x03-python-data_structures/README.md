@@ -29,3 +29,7 @@ Function: `def no_c(my_string):` - removes all characters c and C from a string.
 ## Task 6
 Function: `def print_matrix_integer([[]]):` - prints a matrix of integers.
 * File-name: `6-print_matrix_integer`.
+
+## Task 7
+Function: `def add_tuple(tuple_a=(), tuple_b=()):` - adds two tuples.
+* File-name: `7-add_tuple.py`.
