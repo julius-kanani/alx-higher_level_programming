@@ -20,8 +20,8 @@ def max_integer(my_list=[]):
                 max_int = integer
 
         return (max_int)
-
-    return (None)
+    else:
+        return (None)
 
 
 if __name__ == "__main__":
