@@ -12,12 +12,7 @@ def only_diff_elements(set_1, set_2):
         The return value. A set of all elements present only in one set.
     """
 
-    only_diff_elements_set = set()
-
-    if (len(set_1) > 0) and (len(set_2) > 0):
-        only_diff_elements_set = set_1 ^ set_2
-
-    return (only_diff_elements_set)
+    return (set_1 ^ set_2)
 
 
 if __name__ == "__main__":
