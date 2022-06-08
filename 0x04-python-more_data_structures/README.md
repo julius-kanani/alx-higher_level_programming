@@ -24,3 +24,7 @@ Function: `def only_diff_elements(set_1, set_2):` - returns a set of all element
 ## Task 5
 Function: `def number_keys(a_dictionary):` - returns the number of keys in a dictionary.
 * File-name: `5-number_keys.py`.
+
+## Task 6
+Function: `def print_sorted_dictionary(a_dictionary):` - prints a dictionary by ordered keys.
+* File-name: `6-print_sorted_dictionary.py`.
