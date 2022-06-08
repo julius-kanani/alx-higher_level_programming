@@ -32,3 +32,7 @@ Function: `def print_sorted_dictionary(a_dictionary):` - prints a dictionary by 
 ## Task 7
 Function: `def update_dictionary(a_dictionary, key, value):` - replaces or adds key / value in a dictionary.
 * File-name: `7-update_dictionary.py`.
+
+## Task 8
+Function: `def simple_delete(a_dictionary. key=""):` - deletes a key in dictionary.
+* File-name: `8-simple_delete.py`.
