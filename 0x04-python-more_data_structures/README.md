@@ -28,3 +28,7 @@ Function: `def number_keys(a_dictionary):` - returns the number of keys in a dic
 ## Task 6
 Function: `def print_sorted_dictionary(a_dictionary):` - prints a dictionary by ordered keys.
 * File-name: `6-print_sorted_dictionary.py`.
+
+## Task 7
+Function: `def update_dictionary(a_dictionary, key, value):` - replaces or adds key / value in a dictionary.
+* File-name: `7-update_dictionary.py`.
