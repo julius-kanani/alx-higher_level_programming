@@ -48,3 +48,7 @@ Function: `def best_score(a_dictionary):` - returns a key with biggest integer v
 ## Task 11
 Function: `def multiply_list_map(my_list=[], number=0):` - returns a list with all values mmultiplied by a number using map.
 * File-name: `11-multiply_list_map.py`.
+
+## Task 14
+Function: `def square_matrix_map(matrix=[]):` - computes the square value of all integers of a matrix using map.
+* File-name: `101-square_matrix_map.py`.
