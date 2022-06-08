@@ -40,3 +40,7 @@ Function: `def simple_delete(a_dictionary. key=""):` - deletes a key in dictiona
 ## Task 9
 Function: `def multiply_by_2(a_dictionary):` - returns a new dictionary with all values multiplied by 2.
 * File-name: `9-multiply_by_2.py`.
+
+## Task 10
+Function: `def best_score(a_dictionary):` - returns a key with biggest integer value.
+* File-name: `10-best_score.py`.
