@@ -52,3 +52,7 @@ Function: `def multiply_list_map(my_list=[], number=0):` - returns a list with a
 ## Task 14
 Function: `def square_matrix_map(matrix=[]):` - computes the square value of all integers of a matrix using map.
 * File-name: `101-square_matrix_map.py`.
+
+## Task 15.
+Function: `def complex_delete(a_dictionary, value):` - deletes keys with a specific value in a dictionary.
+* File-name: `102-complex_delete.py`.
