@@ -12,3 +12,7 @@ Function: `def search_replace(my_list, search, replace):` - replaces all occurre
 ## Task 2
 Function: `def uniq_add(my_list=[]):` - adds all unique integers in a list (only once for each integer).
 * File-name: `2-uniq_add.py`.
+
+## Task 3
+Function: `def common_elements(set_1, set_2):` - returns a set of common elements in two sets.
+* File-name: `3-common_elements.py`.
