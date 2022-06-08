@@ -8,3 +8,7 @@ Function: `def square_matrix_simple(matrix=[]):` - computes the square value of 
 ## Task 1
 Function: `def search_replace(my_list, search, replace):` - replaces all occurrences of an element by another in a new list.
 * File-name: `1-search_replace.py`.
+
+## Task 2
+Function: `def uniq_add(my_list=[]):` - adds all unique integers in a list (only once for each integer).
+* File-name: `2-uniq_add.py`.
