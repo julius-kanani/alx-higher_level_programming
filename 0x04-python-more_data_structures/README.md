@@ -36,3 +36,7 @@ Function: `def update_dictionary(a_dictionary, key, value):` - replaces or adds 
 ## Task 8
 Function: `def simple_delete(a_dictionary. key=""):` - deletes a key in dictionary.
 * File-name: `8-simple_delete.py`.
+
+## Task 9
+Function: `def multiply_by_2(a_dictionary):` - returns a new dictionary with all values multiplied by 2.
+* File-name: `9-multiply_by_2.py`.
