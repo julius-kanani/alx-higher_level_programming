@@ -44,3 +44,7 @@ Function: `def multiply_by_2(a_dictionary):` - returns a new dictionary with all
 ## Task 10
 Function: `def best_score(a_dictionary):` - returns a key with biggest integer value.
 * File-name: `10-best_score.py`.
+
+## Task 11
+Function: `def multiply_list_map(my_list=[], number=0):` - returns a list with all values mmultiplied by a number using map.
+* File-name: `11-multiply_list_map.py`.
