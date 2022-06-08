@@ -20,3 +20,7 @@ Function: `def common_elements(set_1, set_2):` - returns a set of common element
 ## Task 4
 Function: `def only_diff_elements(set_1, set_2):` - returns a set of all elements in only one set."
 * File-name: `4-only_diff_elements.py`.
+
+## Task 5
+Function: `def number_keys(a_dictionary):` - returns the number of keys in a dictionary.
+* File-name: `5-number_keys.py`.
