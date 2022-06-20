@@ -16,3 +16,7 @@ Function: `def safe_print_list_integers(my_list=[], x=0):` - prints the first `x
 ## Task 3
 Function: `def safe_print_division(a, b):` - divides 2 integers and prints the result.
 * File-name: `3-safe_print_division.py`.
+
+## Task 4
+Function: `def list_division(my_list_1, my_list_2, list_length):` - divides element by element in two lists.
+* File-name: `4-list_division.py`.
