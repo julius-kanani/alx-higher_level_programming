@@ -26,5 +26,9 @@ Function: `def raise_exception():` - raises a type exception.
 * File-name: `5-raise_exception.py`.
 
 ## Task 6
-FunctionsL `def raise_exception_msg(message=""):` - raises a name exception with a message.
+Functions: `def raise_exception_msg(message=""):` - raises a name exception with a message.
 * File-name: `6-raise_exception_msg.py`.
+
+# MANDATORY TASKS
+Functions: `def safe_print_integer_err(value):` - prints an integer, with error message.
+* File-name: `100-safe_print_integer_err.py`.
