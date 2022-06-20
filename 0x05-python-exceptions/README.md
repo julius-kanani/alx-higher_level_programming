@@ -20,3 +20,7 @@ Function: `def safe_print_division(a, b):` - divides 2 integers and prints the r
 ## Task 4
 Function: `def list_division(my_list_1, my_list_2, list_length):` - divides element by element in two lists.
 * File-name: `4-list_division.py`.
+
+## Task 5
+Function: `def raise_exception():` - raises a type exception.
+* File-name: `5-raise_exception.py`.
