@@ -12,14 +12,18 @@ def safe_print_list(my_list=[], x=0):
         The return value. The real number of elements printed.
     """
     count = 0
+    error = False
 
     try:
-        for integer in range(x):
-            count += 1
-            print(my_list[integer], end='')
+        if not error:
+            for integer in range(x):
+                count += 1
+                print(my_list[integer], end='')
+            print()
+    except Exception as Error:
+        error = True
         print()
-    except Error:
-        raise Error
+        count -= 1
 
     return (count)
 
