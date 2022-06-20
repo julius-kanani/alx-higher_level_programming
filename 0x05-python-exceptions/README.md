@@ -24,3 +24,7 @@ Function: `def list_division(my_list_1, my_list_2, list_length):` - divides elem
 ## Task 5
 Function: `def raise_exception():` - raises a type exception.
 * File-name: `5-raise_exception.py`.
+
+## Task 6
+FunctionsL `def raise_exception_msg(message=""):` - raises a name exception with a message.
+* File-name: `6-raise_exception_msg.py`.
