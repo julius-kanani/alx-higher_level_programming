@@ -12,3 +12,7 @@ Function: `def safe_print_integer(value):` - prints an integer.
 ## Task 2
 Function: `def safe_print_list_integers(my_list=[], x=0):` - prints the first `x` elements of a list and only integers.
 * File-name: `2-safe_print_list_integers.py`.
+
+## Task 3
+Function: `def safe_print_division(a, b):` - divides 2 integers and prints the result.
+* File-name: `3-safe_print_division.py`.
