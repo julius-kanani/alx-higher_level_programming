@@ -21,3 +21,7 @@ Public instance method: `def area(self):` - returns the current Square area.
 ## Task 4
 Class: `Square` - has property `def size(self): to retrieve the private instance attribute `size`, and property setter `def size(self, value):` to set it.
 * File-name: `4-square.py`.
+
+## Task 5
+Class: `Square` has public instance method, `def my\_print(self):` - prints in stdout the square with the character ```#```.
+* File-name: `5-square.py`.
