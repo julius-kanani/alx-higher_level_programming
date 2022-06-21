@@ -26,9 +26,15 @@ Function: `def raise_exception():` - raises a type exception.
 * File-name: `5-raise_exception.py`.
 
 ## Task 6
-Functions: `def raise_exception_msg(message=""):` - raises a name exception with a message.
+Function: `def raise_exception_msg(message=""):` - raises a name exception with a message.
 * File-name: `6-raise_exception_msg.py`.
 
 # ADVANCED TASKS
-Functions: `def safe_print_integer_err(value):` - prints an integer, with error message.
+
+## Task 7
+Function: `def safe_print_integer_err(value):` - prints an integer, with error message.
 * File-name: `100-safe_print_integer_err.py`.
+
+## Task 8
+Function: `def safe_function(fct, *args):` - executes a function safely.
+* File-name: ```101-safe_function.py```.
