@@ -120,7 +120,7 @@ class Square:
             if pos[1] > 0:
                 for i in range(pos[1]):
                     print()
-            
+
             for length in range(size):
                 for position in range(pos[0]):
                     print(" ", end='')
