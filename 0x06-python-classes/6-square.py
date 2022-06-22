@@ -112,11 +112,16 @@ class Square:
             The return value. Nothing.
         """
 
-        if self.__size == 0:
+        size = self.__size
+        pos = self.__position
+        if size == 0:
             print()
-            return
-        for pos_2 in range(self.__position[1]):
-            print()
-        for j in range(self.__size):
-            print("".join([" " for pos in range(self.__position[0])]), end="")
-            print("".join(["#" for integer in range(self.__size)]))
+        else:
+            if pos[1] > 0:
+                print()
+            for length in range(size):
+                for position in range(pos[0]):
+                    print(" ", end='')
+                for width in range(size):
+                    print("#", end='')
+                print()
