@@ -114,16 +114,15 @@ class Square:
 
         size = self.__size
         pos = self.__position
-        if size == 0:
-            print()
-        else:
-            if pos[1] > 0:
-                for i in range(pos[1]):
-                    print("")
-
+        if size != 0:
+            for position in range(pos[1]):
+                print()
             for length in range(size):
-                for position in range(pos[0]):
-                    print(" ", end='')
+                if pos[0] != 0:
+                    for each_pos in range(pos[0]):
+                        print(' ', end='')
                 for width in range(size):
                     print("#", end='')
                 print()
+        else:
+            print()
