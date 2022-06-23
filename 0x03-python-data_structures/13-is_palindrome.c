@@ -38,21 +38,18 @@ int is_palindrome(listint_t **head)
 	linked_list_data = malloc(sizeof(int) * size_of_list);
 	if (linked_list_data == NULL)
 		return (1);
-	else
+	if (size_of_list > 0)
 	{
-		if (size_of_list > 0)
+		i = 0;
+		while (current != NULL)
 		{
-			i = 0;
-			while (current != NULL)
-			{
-				linked_list_data[i] = current->n;
-				++i;
-				current = current->next;
-			}
+			linked_list_data[i] = current->n;
+			++i;
+			current = current->next;
 		}
-		else
-			return (1);
 	}
+	else
+		return (1);
 
 	size_of_list--;
 	for (i = 0; i >= size_of_list; i++, size_of_list--)
@@ -64,6 +61,7 @@ int is_palindrome(listint_t **head)
 		else
 			return (0);
 	}
+	free(linked_list_data);
 
 	return (1);
 }
