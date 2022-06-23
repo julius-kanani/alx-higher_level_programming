@@ -33,7 +33,7 @@ int is_palindrome(listint_t **head)
 	size_t i;
 
 	current = *head;
-	size_of_list = list_len(current);
+	size_of_list = list_len(*head);
 
 
 	linked_list_data = malloc(sizeof(int) * size_of_list);
