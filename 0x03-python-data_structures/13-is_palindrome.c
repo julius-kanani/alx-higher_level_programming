@@ -27,43 +27,64 @@ size_t list_len(const listint_t *h)
  */
 int is_palindrome(listint_t **head)
 {
-	listint_t *current = NULL;
-	size_t size_of_list = 0;
-	int *linked_list_data;
-	size_t i;
+	listint_t *current = NULL, *tail = NULL, *cursor = NULL;
+	size_t list_size = 0, i;
 
 	current = *head;
-	size_of_list = list_len(*head);
-
-
-	linked_list_data = malloc(sizeof(int) * size_of_list);
-	if (linked_list_data == NULL)
-		exit(EXIT_FAILURE);
-
+	list_size = list_len(current);
+	tail = get_last_node(head);
 	if (current == NULL)
 		return (1);
-
-	if (size_of_list > 0)
+	if (list_size > 1)
 	{
 		i = 0;
-		while (current != NULL)
+		while ((i < list_size) && (current != NULL))
 		{
-			linked_list_data[i] = current->n;
+			if (current->n == tail->n)
+			{
+				if ((current == tail) && (current->n == tail->n))
+					return (1);
+				else if ((current->next == tail) && (current->n == tail->n))
+					return (1);
+				cursor = current;
+				while (cursor != NULL)
+				{
+					if (cursor->next == tail)
+					{
+						tail = cursor;
+						break;
+					}
+					cursor = cursor->next;
+				}
+			}
+			else
+				return (0);
+			--list_size;
 			++i;
 			current = current->next;
 		}
 	}
-
-	for (i = 0; i >= size_of_list; i++, size_of_list--)
-	{
-		if (linked_list_data[i] == linked_list_data[size_of_list - i - 1])
-		{
-			continue;
-		}
-		else
-			return (0);
-	}
-	free(linked_list_data);
-
 	return (1);
+
+}
+
+/**
+ * get_last_node - gets the tail of a singly linked list.
+ * @head: The head of a singly linked list.
+ * Return: The address of the last node or tail of a list.
+ */
+listint_t *get_last_node(listint_t **head)
+{
+	listint_t *tail = NULL, *current = NULL;
+
+	current = *head;
+
+	while (current != NULL)
+	{
+		if (current->next == NULL)
+			tail = current;
+		current = current->next;
+	}
+
+	return (tail);
 }
