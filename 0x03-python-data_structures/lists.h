@@ -29,4 +29,6 @@ size_t list_len(const listint_t *h);	/* return number of elements in a linked li
 
 int is_palindrome(listint_t **head);
 
+listint_t *get_last_node(listint_t **head);
+
 #endif /* LISTS_H */
