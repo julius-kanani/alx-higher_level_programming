@@ -54,10 +54,9 @@ int is_palindrome(listint_t **head)
 		}
 	}
 
-	size_of_list--;
 	for (i = 0; i >= size_of_list; i++, size_of_list--)
 	{
-		if (linked_list_data[i] == linked_list_data[size_of_list])
+		if (linked_list_data[i] == linked_list_data[size_of_list - i - 1])
 		{
 			continue;
 		}
