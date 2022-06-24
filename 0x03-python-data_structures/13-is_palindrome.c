@@ -42,9 +42,9 @@ int is_palindrome(listint_t **head)
 		{
 			if (current->n == tail->n)
 			{
-				if ((current == tail) && (current->n == tail->n))
+				if (current == tail)
 					return (1);
-				else if ((current->next == tail) && (current->n == tail->n))
+				else if (current->next == tail)
 					return (1);
 				cursor = current;
 				while (cursor != NULL)
