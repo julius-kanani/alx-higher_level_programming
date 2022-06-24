@@ -113,9 +113,11 @@ class SinglyLinkedList:
         Returns:
             None.
         """
-
-        if type(value) is Node:
+        new_node = None
+        if type(value) is int:
             new_node = Node(value)
+        else:
+            raise TypeError("data must be an integer")
 
         current = self.__head
 
