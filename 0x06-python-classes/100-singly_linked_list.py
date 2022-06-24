@@ -113,11 +113,7 @@ class SinglyLinkedList:
         Returns:
             None.
         """
-        new_node = None
-        if type(value) is int:
-            new_node = Node(value)
-        else:
-            raise TypeError("data must be an integer")
+        new_node = Node(value)
 
         current = self.__head
 
@@ -150,10 +146,14 @@ class SinglyLinkedList:
         string = ""
 
         current = self.__head
-        while (current is not None):
-            string += str(current.data)
-            if current.next_node is not None:
-                string += "\n"
-            current = current.next_node
+
+        if current is None:
+            string += '\n'
+        else:
+            while (current is not None):
+                string += str(current.data)
+                if current.next_node is not None:
+                    string += "\n"
+                current = current.next_node
 
         return (string)
