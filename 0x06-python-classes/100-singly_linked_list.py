@@ -144,16 +144,12 @@ class SinglyLinkedList:
         """
 
         string = ""
-
         current = self.__head
 
-        if current is None:
-            string += '\n'
-        else:
-            while (current is not None):
-                string += str(current.data)
-                if current.next_node is not None:
-                    string += "\n"
-                current = current.next_node
+        while (current is not None):
+            string += str(current.data)
+            if current.next_node is not None:
+                string += "\n"
+            current = current.next_node
 
         return (string)
