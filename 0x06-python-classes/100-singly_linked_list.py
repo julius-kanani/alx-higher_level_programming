@@ -114,7 +114,8 @@ class SinglyLinkedList:
             None.
         """
 
-        new_node = Node(value)
+        if type(value) is Node:
+            new_node = Node(value)
 
         current = self.__head
 
