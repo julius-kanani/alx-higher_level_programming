@@ -1,0 +1,57 @@
+The ``0-add_integer`` module
+===========================
+
+Using ``add_integer``
+---------------------
+
+This is a 0-add_integer text file in reStructuredText format.
+First import ``add_integer`` from the ``0-add_integer`` module:
+	>>> add_integer = __import__("0-add_integer").add_integer
+
+	Usage:
+Regular addition, a positive number with a positive number
+	>>> add_integer(3, 2)
+	5
+
+Addition of a positive number and a negative number.
+	>>> add_integer(-5, 5)
+	0
+
+	>>> add_integer(5, -5)
+	0
+
+Addition of a negative number and a negative number.
+	>>> add_integer(-5, -5)
+	-10
+
+Addition of a float with a positive integer.
+	>>> add_integer(2.9, 9)
+	11
+
+Addition for non-integers
+	>>> add_integer("Hi", "There")
+	Traceback (most recent call last):
+	...
+	TypeError: a must be an integer
+
+Check for module docstring:
+	>>> exists = __import__("0-add_integer").__doc__
+	>>> len(exists) > 1
+	True
+
+Check for function docstring:
+	>>> exists = __import__("0-add_integer").add_integer.__doc__
+	>>> len(exists) > 1
+	True
+
+Checking no args:
+	>>> add_integer()
+	Traceback (most recent call last):
+	...
+	TypeError: add_integer() missing 1 required positional argument: 'a'
+
+Checking for multiple arguments more than two.
+	>>> add_integer(1, 2, 3, 4)
+	Traceback (most recent call last):
+	...
+	TypeError: add_integer() takes from 1 to 2 positional arguments but 4 were given
