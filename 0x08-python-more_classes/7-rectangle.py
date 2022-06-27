@@ -101,7 +101,7 @@ class Rectangle:
     def __str__(self):
         """String representation of the rectangle using #. """
 
-        if self.__width is 0 or self.__height is 0:
+        if self.__width == 0 or self.__height == 0:
             return ""
         return ("\n".join(["".join([str(self.print_symbol)
                 for i in range(self.__width)]) for j in range(self.__height)]))
