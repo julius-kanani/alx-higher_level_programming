@@ -19,3 +19,6 @@
 
 ## Task 5
 * File-name: `5-rectangle.py` - Defines a rectangle by:(based on `4-rectangle.py`)
+
+## Task 6
+* File-name: `6-rectangle.py` - Defines a recatngle by:(based on `5-rectangle.py`)
