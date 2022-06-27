@@ -95,7 +95,8 @@ class Rectangle:
 
     @classmethod
     def square(cls, size=0):
-        return cls(size, size)
+        if type(size) is int:
+            return cls(size, size)
 
     def area(self):
         """ Returns the rectangle area. """
