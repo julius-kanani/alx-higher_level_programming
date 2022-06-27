@@ -10,3 +10,6 @@
 
 ## Task 2
 * File-name: `2-rectangle.py` - Defines a rectangle by:(based on `1-rectangle.py`)
+
+## Task 3
+* File-name: `3-rectangle.py` - Defines a rectangle by:(based on `2-rectangle.py`)
