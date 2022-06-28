@@ -106,16 +106,15 @@ class Rectangle:
     @classmethod
     def square(cls, size=0):
         """ Method that returns a new instance of Rectangle class
+
         Args:
-            cls: rectangle class
             size: rectangle width and rectangle height
+
         Returns:
             a new instance of Rectangle class
         """
-        cls.__width = size
-        cls.__height = size
 
-        return cls(cls.__width, cls.__height)
+        return cls(size, size)
 
     def area(self):
         """ Returns the rectangle area. """
