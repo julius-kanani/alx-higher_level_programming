@@ -7,8 +7,9 @@ Using ``add_integer``
 This is a 0-add_integer text file in reStructuredText format.
 First import ``add_integer`` from the ``0-add_integer`` module:
 	>>> add_integer = __import__("0-add_integer").add_integer
+	>>>
 
-	Usage:
+Usage:
 Regular addition, a positive number with a positive number
 	>>> add_integer(3, 2)
 	5
