@@ -16,8 +16,8 @@ def matrix_divided(matrix, div):
         A new matrix divided by div.
     """
     error_msg = "matrix must be a matrix (list of lists) of integers/floats"
-
-    new_matrix = [[column for column in row]for row in matrix]
+    if matrix is None:
+        raise TypeError(error_msg)
 
     if type(div) not in [int, float]:
         raise TypeError("div must be a number")
@@ -26,8 +26,12 @@ def matrix_divided(matrix, div):
             raise ZeroDivisionError("division by zero")
 
     each_row_is_list = all(map(lambda row: type(row) is list, matrix))
-    if type(matrix) is list and each_row_is_list:
+    if (type(matrix) is list) and (each_row_is_list):
+        new_matrix = [[column for column in row] for row in matrix]
         if all(map(lambda row: len(row) == len(matrix[0]), matrix)):
+            for row in matrix:
+                if not all(map(lambda col: type(col) in [int, float], row)):
+                    raise TypeError(error_msg)
             new_matrix = [
                     [round(column / div, 2) for column in row]
                     for row in matrix
