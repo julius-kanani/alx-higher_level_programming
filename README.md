@@ -5,3 +5,4 @@ This repository contains all @alx\_africa Python programming tasks.
 
 ## ALX Africa 
 ### Do hard things
+0x09-python-everything_is_object
