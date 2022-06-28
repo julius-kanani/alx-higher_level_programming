@@ -112,9 +112,10 @@ class Rectangle:
         Returns:
             a new instance of Rectangle class
         """
+        cls.__width = size
+        cls.__height = size
 
-        if type(size) is int:
-            return cls(size, size)
+        return cls(cls.__width, cls.__height)
 
     def area(self):
         """ Returns the rectangle area. """
