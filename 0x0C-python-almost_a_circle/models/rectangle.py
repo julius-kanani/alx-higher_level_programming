@@ -117,9 +117,13 @@ class Rectangle(Base):
 
     def display(self):
         """ Prints in stdout the Rectangle instance with the character #. """
-
+        lines = self.__y
         for i in range(self.__height):
-            print("#" * self.__width)
+            if lines > 0:
+                while lines > 0:
+                    print()
+                    lines -= 1
+            print(" " * self.__x + "#" * self.__width)
 
     def __str__(self):
         """ Returns a string representation of a Rectangle instance. """
