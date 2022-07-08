@@ -125,22 +125,34 @@ class Rectangle(Base):
                     lines -= 1
             print(" " * self.__x + "#" * self.__width)
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """ Assigns an argument to each attribute. """
 
-        for index, arg in enumerate(args):
-            if index == 0:
-                self.id = arg
-            elif index == 1:
-                self.__width = arg
-            elif index == 2:
-                self.__height = arg
-            elif index == 3:
-                self.__x = arg
-            elif index == 4:
-                self.__y = arg
-            else:
-                raise Exception("Out of Order")
+        if len(args) > 0:
+            for index, arg in enumerate(args):
+                if index == 0:
+                    self.id = arg
+                elif index == 1:
+                    self.__width = arg
+                elif index == 2:
+                    self.__height = arg
+                elif index == 3:
+                    self.__x = arg
+                elif index == 4:
+                    self.__y = arg
+                else:
+                    raise Exception("Out of Order")
+        else:
+            if "id" in kwargs:
+                self.id = kwargs["id"]
+            if "width" in kwargs:
+                self.width = kwargs["width"]
+            if "height" in kwargs:
+                self.height = kwargs["height"]
+            if "x" in kwargs:
+                self.x = kwargs["x"]
+            if "y" in kwargs:
+                self.y = kwargs["y"]
 
     def __str__(self):
         """ Returns a string representation of a Rectangle instance. """
