@@ -1,0 +1,111 @@
+#!/usr/bin/python3
+""" The rectangle module
+
+Supplies the Rectangle class.
+"""
+
+
+from models.base import Base
+
+
+class Rectangle(Base):
+    """ Defines the Rectangle class
+        Inherits the Base class
+
+    Attributes:
+        __width (int): The width.
+        __height (int): The rectangle height.
+        __x (int): The x.
+        __y: (int): The y.
+    """
+
+    def __init__(self, width, height, x=0, y=0, id=None):
+        """ Initializes the Rectangle class
+
+        Args:
+            width (int): The rectangle width.
+            height (int): The rectangle height.
+            x (int): The x coordinate.
+            y (int): The y coordinate.
+            id (int): Unique identifier.
+
+        Returns:
+            None.
+        """
+
+        self.width = width
+        self.height = height
+        self.x = x
+        self.y = y
+        super().__init__(id)
+
+    @property
+    def width(self):
+        """ Returns the width of the rectangle. """
+
+        return self.__width
+
+    @width.setter
+    def width(self, value):
+        """ Sets the width of the rectangle. """
+        if type(value) is int:
+            if value >= 0:
+                self.__width = value
+            else:
+                raise ValueError("Width must be greater than 0")
+        else:
+            raise TypeError("width must be an integer")
+
+    @property
+    def height(self):
+        """ Returns the height of the rectangle. """
+
+        return self.__height
+
+    @height.setter
+    def height(self, value):
+        """ Sets the height of the rectangle. """
+            
+        if type(value) is int:
+            if value >= 0:
+                self.__height = value
+            else:
+                raise ValueError("height must be greater than 0")
+        else:
+            raise TypeError("height must be an integer")
+
+    @property
+    def x(self):
+        """ Returns the x coordinate. """
+
+        return self.__x
+
+    @x.setter
+    def x(self, value):
+        """ Sets the x coordinate. """
+
+        if type(value) is int:
+            if value >= 0:
+                self.__x = value
+            else:
+                raise ValueError("x must be greater than 0")
+        else:
+            raise TypeError("x must be an integer")
+
+    @property
+    def y(self):
+        """ Returns the y coordinate. """
+
+        return self.__y
+
+    @y.setter
+    def y(self, value):
+        """ Sets the y coordinate. """
+        
+        if type(value) is int:
+            if value >= 0:
+                self.__x = value
+            else:
+                raise ValueError("y coordinate must be greater than 0")
+        else:
+            raise TypeError("y coordinate  must be an integer")
