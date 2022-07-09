@@ -39,6 +39,32 @@ class Square(Rectangle):
         self.width = value
         self.height = value
 
+    def update(self, *args, **kwargs):
+        """ Updates the class Square by assigning attributes. """
+
+        if len(args) > 0:
+            for index, arg in enumerate(args):
+                if index == 0:
+                    self.id = arg
+                elif index == 1:
+                    self.size = arg
+                elif index == 2:
+                    self.x = arg
+                elif index == 3:
+                    self.y = arg
+        else:
+            if "id" in kwargs:
+                if kwargs["id"] is None:
+                    super().__init__(self.size, self.x, self.y)
+                else:
+                    self.id = kwargs["id"]
+            if "size" in kwargs:
+                self.size = kwargs["size"]
+            if "x" in kwargs:
+                self.x = kwargs["x"]
+            if "y" in kwargs:
+                self.y = kwargs["y"]
+
     def __str__(self):
         """ A string representation of the Square class. """
 
