@@ -9,3 +9,8 @@ Learning Objectives.
 * What is **kwargs and how to use it
 * How to handle named arguments in a function
 
+## File Structure
+* models:
+	* base.py - Contains the base class Base
+	* rectangle.py - Contains the class Rectangle, a subclass of Base
+	* square.py - Contains the class Square, a subclass of Rectangle
