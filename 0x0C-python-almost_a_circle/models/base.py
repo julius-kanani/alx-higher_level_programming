@@ -74,3 +74,16 @@ class Base:
                 obj_dicts.append(cls.to_dictionary(obj))
         with open(filename, 'w') as file:
             file.write(cls.to_json_string(obj_dicts))
+
+    @staticmethod
+    def from_json_string(json_string):
+        """ Returns the list of the JSON string representation.
+
+        Args:
+            json_string (json): The json string.
+        """
+
+        if json_string is None:
+            return []
+        else:
+            return json.loads(json_string)
