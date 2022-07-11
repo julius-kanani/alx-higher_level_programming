@@ -37,6 +37,8 @@ class Base:
         """ Sets id value """
 
         if id is not None:
+            if type(id) is not int:
+                raise TypeError("id must be > 0")
             self.__id = id
         else:
             type(self).__nb_objects += 1
@@ -51,7 +53,7 @@ class Base:
         """
 
         if list_dictionaries is None:
-            return "[]"
+            return []
         else:
             return json.dumps(list_dictionaries)
 
