@@ -52,7 +52,7 @@ class Base:
             list_dictionaries: Dictionary representations of instances."
         """
 
-        if list_dictionaries is None:
+        if list_dictionaries is None or len(list_dictionaries) == 0:
             return "[]"
         else:
             return json.dumps(list_dictionaries)
