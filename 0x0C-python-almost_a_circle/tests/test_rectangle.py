@@ -23,3 +23,15 @@ class TestRectangle(unittest.TestCase):
 
         with self.assertRaises(TypeError):
             r2 = Rectangle(1, 1, 1, 1, 1, 1, 1)
+
+    def test_obj_rectangle_has_id(self):
+        """ Checks if Rectangle inherits Base class. """
+
+        r3 = Rectangle(3, 5)
+        self.assertEqual(r3.id, 1)
+
+    def test_obj_rectangle_correct_input(self):
+        """ Tests for incorrect arguments. """
+
+        with self.assertRaises(TypeError):
+            r4 = Rectangle("Hi", "There")
