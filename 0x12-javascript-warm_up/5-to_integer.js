@@ -2,7 +2,7 @@
 
 const firstArgument = process.argv[2];
 if (isNaN(firstArgument)) {
-  console.log('Not a Number');
+  console.log('Not a number');
 } else {
-  console.log('My Number: ' + firstArgument);
+  console.log('My number: ' + firstArgument);
 }
