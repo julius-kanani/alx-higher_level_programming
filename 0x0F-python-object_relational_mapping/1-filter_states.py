@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """ 0-select_states module. This module lists all states from the database
-hbtn_0e_0_usa. """
+hbtn_0e_0_usa with a name starting with N. """
 
 
 import MySQLdb
