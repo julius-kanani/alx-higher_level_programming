@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" 0-select_states module. This module lists all states from the database
+""" 1-filter_states module. This module lists all states from the database
 hbtn_0e_0_usa with a name starting with N. """
 
 
@@ -14,7 +14,7 @@ def filter_states():
     db = MySQLdb.connect(
             host="localhost", user=argv[1], passwd=argv[2], db=argv[3])
     cursor = db.cursor()
-    result = cursor.execute(
+    cursor.execute(
             "SELECT * FROM states WHERE name LIKE 'N%' ORDER BY id ASC;")
 
     rows = cursor.fetchall()
