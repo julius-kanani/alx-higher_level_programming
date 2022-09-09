@@ -20,7 +20,8 @@ def filter_states():
 
     rows = cursor.fetchall()
     for row in rows:
-        print(row)
+        if row[1] == argv[4]:
+            print(row)
 
     cursor.close()
     db.close()
