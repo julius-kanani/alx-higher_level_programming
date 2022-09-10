@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-""" 2-my_filter_states module. This module filters all states from the
-database hbtn_0e_0_usa using user input. """
+""" 3-my_safe_filter_states module. This module filters all states from the
+database hbtn_0e_0_usa using user input, preventing SQL injection. """
 
 
 import MySQLdb
