@@ -2,7 +2,6 @@
 """ 7-model_state_fetch_all module. Lists all State objects from the
     hbtn_0e_6_usa database. """
 
-
 from model_state import Base, State
 from sys import argv
 from sqlalchemy import (create_engine)
@@ -10,16 +9,7 @@ from sqlalchemy.orm import sessionmaker
 
 
 def model_state_fetch_all(username=argv[1], passwd=argv[2], db=argv[3]):
-    """ Lists all State objects from the database hbtn_0e_6_usa.
-
-    Args:
-        username (str): MySQL username.
-        passwd (str): MySQL passwd.
-        db (str): The database name.
-
-    Returns:
-        State objects from the database hbtn_0e_6_usa.
-    """
+    """ Lists all State objects from the database hbtn_0e_6_usa. """
 
     # initialize engine
     engine = engine = create_engine(
