@@ -1,4 +1,6 @@
-""" The model_state module. First state model. """
+#!/usr/bin/python3
+""" The model_state module. First state model.
+"""
 from sqlalchemy import Column, ForeignKey, Integer, String
 from sqlalchemy.orm import declarative_base
 
