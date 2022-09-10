@@ -25,11 +25,11 @@ def filter_states():
             )
 
     rows = cursor.fetchall()
+    out = []
     for row in rows:
-        if row == rows[-1]:
-            print(row[0])
-            break
-        print(row[0], end=", ")
+        out.append(row[0])
+
+    print(', '.join(out))
 
     cursor.close()
     db.close()
