@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-changes the name of the State object where id=2 to New Mexico from a database
+Prints all City Objects from a database.
 """
 
 from sqlalchemy import create_engine
