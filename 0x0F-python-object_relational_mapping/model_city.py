@@ -12,13 +12,13 @@ class City(Base):
             id (int): The class unique id, that is auto-generated.
             name (str): The name of the city.
     """
-    __tablename__ = "city"
+    __tablename__ = "cities"
 
     id = Column(
             Integer, primary_key=True, unique=True, nullable=False,
             autoincrement=True)
     name = Column(String(128), nullable=False)
-    state_id = Column(Integer, nullable=False, ForeignKey('states.id'))
+    state_id = Column(Integer, ForeignKey('states.id'), nullable=False)
 
     def __repr__(self):
         """ Returns a string representation instance of the city. """

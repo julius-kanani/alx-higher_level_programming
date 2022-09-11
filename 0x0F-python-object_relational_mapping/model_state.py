@@ -21,3 +21,8 @@ class State(Base):
             Integer, primary_key=True, unique=True, nullable=False,
             autoincrement=True)
     name = Column(String(128), nullable=False)
+
+    def __repr__(self):
+        """ Returns a string representation instance of the State. """
+
+        return "State(id={:d}, name={:s})".format(self.id, self.name)
