@@ -1,3 +1,3 @@
 #!/bin/bash
 # Sends DELETE request to URL passes, displays body of response.
-curl -fLs -X DELETE "$1"
+curl -Ls -X DELETE "$1"
