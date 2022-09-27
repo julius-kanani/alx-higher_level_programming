@@ -1,3 +1,3 @@
 #!/bin/bash
 # Returns only a status code
-curl -sI -o /dev/null -w "%{http_code}" "$1"
+curl -s "{$1}" -X POST -H "Content-Type: application/json" -d @$2
