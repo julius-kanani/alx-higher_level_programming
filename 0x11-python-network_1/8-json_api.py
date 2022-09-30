@@ -12,7 +12,7 @@ if __name__ == "__main__":
         letter = sys.argv[1]
     c_data = {'q': letter}
 
-    result = requests.get('http://0.0.0.0:5000/search_user', data=c_data)
+    result = requests.post('http://0.0.0.0:5000/search_user', data=c_data)
     try:
         json_body = result.json()
 
