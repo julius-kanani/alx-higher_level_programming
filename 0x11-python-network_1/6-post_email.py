@@ -14,4 +14,4 @@ if __name__ == "__main__":
     result = requests.post(url, data={'email': email})
 
     # Display the body of the response
-    print(result.txt)
+    print("Your email is: {:s}".format(result.txt))
