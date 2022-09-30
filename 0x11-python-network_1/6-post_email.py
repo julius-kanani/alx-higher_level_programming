@@ -11,7 +11,7 @@ if __name__ == "__main__":
     url, email = sys.argv[1], sys.argv[2]
 
     # Send a POST request
-    result = requests.get(url, data={'email': email})
+    result = requests.post(url, data={'email': email})
 
     # Display the body of the response
     print(result.txt)
