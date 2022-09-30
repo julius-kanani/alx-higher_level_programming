@@ -1,4 +1,4 @@
-#!/usr/bin.python3
+#!/usr/bin/python3
 """ 6-post_email module. Takes in a URL and an email address, sends a
     POST request to the passed URL with the email as a parameter,
     and finally displays the body of the response. """
