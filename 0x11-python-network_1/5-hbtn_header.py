@@ -6,4 +6,4 @@ import sys
 
 if __name__ == "__main__":
     req = requests.get("https://alx-intranet.hbtn.io")
-    print(req.headers['X-Request-Id'])
+    print("{}".format(req.headers['X-Request-Id']))
