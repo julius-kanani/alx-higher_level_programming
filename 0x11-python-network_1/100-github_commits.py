@@ -13,7 +13,10 @@ if __name__ == "__main__":
             owner_name, repo_name)
     response = requests.get(url)
     commits = response.json()
-    for i in range(10):
-        print("{}: {}".format(
+    try:
+        for i in range(10):
+            print("{}: {}".format(
               commits[i].get('sha'),
               commits[i].get('commit').get('author').get('name')))
+    except Exception as error:
+        pass
