@@ -8,19 +8,15 @@ def find_peak(list_of_integers):
     Args:
         list_of_integers (list): The list of unsorted integers.
     """
-    peak_list = []
-    lst_size = len(list_of_integers)
 
-    if lst_size == 0:
+    if not list_of_integers:
         return None
-    elif lst_size < 3:
-        return max(list_of_integers)
-    elif list_of_integers[0] > list_of_integers[1]:
-        return abs(list_of_integers[0])
-    elif list_of_integers[-1] > list_of_integers[-2]:
-        return abs(list_of_integers[-1])
-
-    for i in range(1, lst_size):
-        if list_of_integers[i] >= list_of_integers[i - 1] \
-           and list_of_integers[i] >= list_of_integers[i + 1]:
-            return abs(list_of_integers[i])
+    # Binary search for a peak
+    left, right = 0, len(list_of_integers) - 1
+    while left < right:
+        mid = (left + right) // 2
+        if list_of_integers[mid] < list_of_integers[mid + 1]:
+            left = mid + 1
+        else:
+            right = mid
+    return list_of_integers[left]
